@@ -7,14 +7,14 @@
     --nav-bg-color: #fff;
     --text-color-dark: rgb(85, 83, 83);
     --hover-bg-color: #eee;
-    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --course-card-shadow-color: rgba(0, 0, 0, 0.1);
     --card-bg-color: #fff;
     --btn-bg-color: orangered;
     --btn-bg-hover-color: rgba(223, 70, 15, 0.856);
     --course-bg-color: #fff;
     --inactive-tab-color: gray;
     --active-tab-color: #000;
-    --box-bg-color: #bedcff;
+    --course-card-bg-color: #bedcff;
     --btn-blue-bg-color: #3984f8;
     --btn-blue-bg-hover-color: #1b4fda;
     --html-color: rgb(25, 94, 54);
@@ -28,7 +28,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    box-sizing: border-box;
+    course-card-sizing: border-course-card;
     font-family: "Poppins", sans-serif;
 }
 
@@ -49,7 +49,7 @@ nav {
     background: var(--nav-bg-color);
     width: 280px;
     overflow: hidden;
-    box-shadow: 0 20px 35px var(--box-shadow-color);
+    course-card-shadow: 0 20px 35px var(--course-card-shadow-color);
 }
 
 .logo {
@@ -88,7 +88,7 @@ nav .fas {
     text-align: center;
 }
 
-.nav-item {
+.nav-link {
     position: relative;
     top: 12px;
     margin-left: 10px;
@@ -98,24 +98,24 @@ a:hover {
     background: var(--hover-bg-color);
 }
 
-.logout {
+.nav-logout {
     position: absolute;
     bottom: 0;
 }
 
 /* Main Section */
-.main {
+.main-content {
     position: relative;
     padding: 20px;
     width: 100%;
 }
 
-.main-top {
+.header-main {
     display: flex;
     width: 100%;
 }
 
-.main-top i {
+.header-main i {
     position: absolute;
     right: 0;
     margin: 10px 30px;
@@ -123,31 +123,31 @@ a:hover {
     cursor: pointer;
 }
 
-.main-skills {
+.skills-section {
     display: flex;
     margin-top: 20px;
 }
 
-.main-skills .card {
+.skills-section .card {
     width: 25%;
     margin: 10px;
     background: var(--card-bg-color);
     text-align: center;
     border-radius: 20px;
     padding: 10px;
-    box-shadow: 0 20px 35px var(--box-shadow-color);
+    course-card-shadow: 0 20px 35px var(--course-card-shadow-color);
 }
 
-.main-skills .card h3 {
+.skills-section .card h3 {
     margin: 10px;
     text-transform: capitalize;
 }
 
-.main-skills .card p {
+.skills-section .card p {
     font-size: 12px;
 }
 
-.main-skills .card button {
+.skills-section .card button {
     background: var(--btn-bg-color);
     color: #fff;
     padding: 7px 15px;
@@ -156,66 +156,66 @@ a:hover {
     cursor: pointer;
 }
 
-.main-skills .card button:hover {
+.skills-section .card button:hover {
     background: var(--btn-bg-hover-color);
 }
 
-.main-skills .card i {
+.skills-section .card i {
     font-size: 22px;
     padding: 10px;
 }
 
 /* Courses */
-.main-course {
+.course-section {
     margin-top: 20px;
     text-transform: capitalize;
 }
 
-.course-box {
+.course-container {
     width: 100%;
     height: 300px;
     padding: 10px 10px 30px 10px;
     margin-top: 10px;
     background: var(--course-bg-color);
     border-radius: 10px;
-    box-shadow: 0 20px 35px var(--box-shadow-color);
+    course-card-shadow: 0 20px 35px var(--course-card-shadow-color);
 }
 
-.course-box ul {
+.course-container ul {
     list-style: none;
     display: flex;
 }
 
-.course-box ul li {
+.course-container ul li {
     margin: 10px;
     color: var(--inactive-tab-color);
     cursor: pointer;
 }
 
-.course-box ul .active {
+.course-container ul .active {
     color: var(--active-tab-color);
     border-bottom: 1px solid var(--active-tab-color);
 }
 
-.course-box .course {
+.course-container .course {
     display: flex;
 }
 
-.box {
+.course-card {
     width: 33%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background: var(--box-bg-color);
-    box-shadow: 0 20px 35px var(--box-shadow-color);
+    background: var(--course-card-bg-color);
+    course-card-shadow: 0 20px 35px var(--course-card-shadow-color);
 }
 
-.box p {
+.course-card p {
     font-size: 12px;
     margin-top: 5px;
 }
 
-.box button {
+.course-card button {
     background: var(--btn-blue-bg-color);
     color: #fff;
     padding: 7px 10px;
@@ -224,11 +224,11 @@ a:hover {
     cursor: pointer;
 }
 
-.box button:hover {
+.course-card button:hover {
     background: var(--btn-blue-bg-hover-color);
 }
 
-.box i {
+.course-card i {
     font-size: 7rem;
     float: right;
     margin: -20px 20px 20px 0;
